@@ -1,0 +1,46 @@
+This folder contains my learning notes and hands-on practice from network scanning using Nmap. These skills are essential for identifying live hosts, open ports, and running services —
+which is important for vulnerability assessment and network defense.
+
+✅ Topics I Learned
+🔹 What is Network Scanning?
+The process of discovering active devices and services in a network.
+Helps security analysts find vulnerabilities or unknown devices.
+
+🔹 Introduction to Nmap
+Nmap (Network Mapper) is a free, powerful tool used to scan networks.
+It can detect hosts, services, operating systems, and open ports.
+
+🔹 Types of Nmap Scans I Learned:
+Ping scan – to find live hosts
+TCP SYN scan – to detect open TCP ports
+UDP scan – to discover services that use UDP (like DNS or DHCP)
+Version scan – to identify software versions running on ports
+OS detection – to guess the operating system
+
+🔹 Nmap Flags I Practiced:
+-sS (SYN scan)
+-sU (UDP scan)
+-O (OS detection)
+-A (Aggressive scan – all info)
+-p (Scan specific ports)
+-v (Verbose output)
+
+🔹 Common Port Numbers
+Port 80 – HTTP
+Port 443 – HTTPS
+Port 22 – SSH
+Port 21 – FTP
+Port 53 – DNS
+Port 25 – SMTP
+
+🔹 How to Read Nmap Output
+I learned how to analyze scan results to identify:
+Open ports
+Running service
+Possible vulnerabilities
+Host information (like OS and uptime)
+
+🔐 Why It Matters in Cybersecurity
+Nmap is a foundational tool for both ethical hackers and security analysts. It helps detect misconfigurations, unauthorized services, or exposed systems.
+Knowing how to use Nmap makes me better at threat detection, vulnerability analysis, and network defense.
+
