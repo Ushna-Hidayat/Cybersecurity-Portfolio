@@ -1,0 +1,38 @@
+This folder contains my learning summary from the Cisco Networking Basics course. These fundamentals helped me understand how data travels, how devices connect, and how to troubleshoot networks — all of which are essential in cybersecurity.
+
+✅ Topics I Learned
+🔹 What is a Network?
+A network is a group of devices (computers, servers, routers) that communicate and share data.
+Types of networks: LAN (Local Area Network), WAN (Wide Area Network), WLAN (Wireless LAN)
+
+🔹 IP Addressing
+IP addresses are like phone numbers for devices on a network.
+I learned about IPv4, subnetting, private vs. public IPs, and DHCP.
+
+🔹 The OSI Model (7 Layers)
+Physical – cables, connectors
+Data Link – MAC addresses, switches
+Network – IP addresses, routers
+Transport – TCP/UDP
+Session – opening/closing sessions
+Presentation – data formatting (encryption, compression)
+Application – web, email, apps
+
+🔹 Common Protocols
+HTTP/HTTPS – web browsing
+DNS – translates names like google.com to IPs
+FTP – file transfers
+SMTP/POP3 – sending/receiving email
+TCP/IP – foundation of internet communication
+
+🔹 Devices in a Network
+Switch – connects devices inside a LAN
+Router – connects different networks together
+Firewall – protects against unauthorized traffic
+
+🔹 Network Troubleshooting Tools
+ping – checks if a device is reachable
+tracert – shows the path to a destination
+ipconfig/ifconfig – shows device IP info
+nslookup – checks DNS
+netstat – shows active connections
