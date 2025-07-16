@@ -1,1 +1,2 @@
-# Cybersecurity-Portfolio
+I am a motivated and detail-oriented aspiring cybersecurity analyst with a solid foundation in networking, system security, and Linux tools. I value integrity, continuous learning, and protecting digital environments from threats. My passion for cybersecurity is driven by a desire to help organizations safeguard their data and systems. With my growing skills in threat detection, log analysis, and security best practices, I am prepared to support an organization’s efforts to reduce risks and maintain a strong security posture.
+
