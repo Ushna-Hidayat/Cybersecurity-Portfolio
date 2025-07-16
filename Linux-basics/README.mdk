@@ -1,0 +1,28 @@
+This folder contains my learning summary from a beginner-level Linux course. I used these commands and concepts while practicing in Kali Linux and preparing for a career as a security analyst.
+
+✅ Topics I Learned
+🔹 Linux Command Line Basics
+ls, cd, pwd, mkdir, rm, touch, clear
+
+Navigating the file system using relative and absolute paths
+
+🔹 File Permissions & Management
+chmod, chown, ls -l, and permission types: read, write, execute
+
+Understanding users, groups, and file access control
+
+🔹 Process Management
+Using ps, top, and kill to view and manage running processes
+
+🔹 Package Management
+Installing and updating software with apt, apt-get, and dpkg
+
+🔹 Networking Commands
+Basics of ping, ifconfig, netstat, traceroute
+
+🔹 Searching and Filtering
+grep, find, cat, head, tail, less, more
+
+🔐 Why It Matters in Cybersecurity
+Linux is widely used in cybersecurity, especially in tools like Kali Linux. 
+Learning these commands has helped me understand how systems work, how to investigate logs, and how attackers and defenders operate in Linux-based environments.
