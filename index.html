@@ -410,7 +410,7 @@
         </div>
         <div class="card-links">
           <a href="https://github.com/Ushna-Hidayat/Cybersecurity-Portfolio/blob/main/Networking/README.md" target="_blank" rel="noopener">View Report →</a>
-          <a href="assets/pk-enterprises-network.pkt" target="_blank" rel="noopener">Download .pkt File →</a>
+          <a href="https://raw.githubusercontent.com/Ushna-Hidayat/Cybersecurity-Portfolio/main/Networking/project%20CN.pkt" target="_blank" rel="noopener">Download .pkt File →</a>
         </div>
       </div>
 
@@ -460,7 +460,7 @@
           <span class="chip">Assembly</span>
         </div>
         <div class="card-links">
-          <a href="assets/atm-system-project.asm" target="_blank" rel="noopener">View Source (.asm) →</a>
+          <a href="ATM_SYSTEM_PROJECT.asm" target="_blank" rel="noopener">View Source (.asm) →</a>
         </div>
       </div>
     </section>
@@ -469,108 +469,24 @@
     <section id="soc-reports">
       <span class="eyebrow high">soc reports</span>
       <h2>Lab investigations</h2>
-      <p class="section-sub">Reports from the SOC internship lab series — write-ups formatted the way a real handoff document should be.</p>
+      <p class="section-sub">Reports from the SOC internship lab series — combined into one document, in the order the work was done.</p>
 
       <div class="card">
         <div class="card-head">
-          <div class="card-title">UAC Bypass Investigation — UACME 59 / Sysmon</div>
-          <div class="card-meta">INCIDENT INVESTIGATION · L1 ANALYST</div>
+          <div class="card-title">SOC Internship Lab Reports — Combined</div>
+          <div class="card-meta">8 REPORTS · 66 PAGES</div>
         </div>
-        <p>Investigated a Sysmon log for a UAC bypass technique: traced the process chain from
-        Akagi_64.exe through an auto-elevating Task Manager into a High-integrity cmd.exe, mapped
-        the behavior to MITRE ATT&amp;CK, and issued a severity and escalation call.</p>
-        <div class="stack"><span class="chip">Sysmon</span><span class="chip">Process Chain Analysis</span><span class="chip">T1548.002</span></div>
-        <div class="card-links"><a href="reports/soc-incident-uacme59.docx" target="_blank" rel="noopener">Download Report →</a></div>
-      </div>
-
-      <div class="card">
-        <div class="card-head">
-          <div class="card-title">Reconnaissance Investigation — Low Severity</div>
-          <div class="card-meta">DETECTION LAB</div>
+        <p>UAC Bypass Investigation (UACME 59), Windows Event Viewer logon auditing, Sysmon deployment
+        &amp; event mapping, MITRE ATT&amp;CK exploration, a phishing → ransomware SOC simulation, login
+        scenario log analysis, 20 attack-scenario responses, and the TryHackMe onboarding path —
+        combined into a single report, each starting on its own page.</p>
+        <div class="stack">
+          <span class="chip">Sysmon</span>
+          <span class="chip">Event Viewer</span>
+          <span class="chip">MITRE ATT&amp;CK</span>
+          <span class="chip">Incident Response</span>
         </div>
-        <p>Generated and investigated endpoint reconnaissance telemetry (whoami, netstat, net user, and
-        others) across Windows Event Viewer, Sysmon, Wazuh, and Wireshark, then built a timeline and
-        MITRE mapping covering discovery techniques.</p>
-        <div class="stack"><span class="chip">Wazuh</span><span class="chip">Wireshark</span><span class="chip">T1046 / T1087</span></div>
-        <div class="card-links"><a href="reports/lab1-reconnaissance.pdf" target="_blank" rel="noopener">Download Report (PDF) →</a></div>
-      </div>
-
-      <div class="card">
-        <div class="card-head">
-          <div class="card-title">Windows Event Viewer — Logon Auditing</div>
-          <div class="card-meta">DETECTION LAB</div>
-        </div>
-        <p>Navigated the full Windows Logs set, filtered 32,000+ Security events down to logon activity,
-        and built a custom view isolating Event ID 4624 (successful logon) and 4625 (failed logon).</p>
-        <div class="stack"><span class="chip">Event Viewer</span><span class="chip">4624 / 4625</span></div>
-        <div class="card-links"><a href="reports/lab1-event-viewer.docx" target="_blank" rel="noopener">Download Report →</a></div>
-      </div>
-
-      <div class="card">
-        <div class="card-head">
-          <div class="card-title">Sysmon Deployment &amp; Event Mapping</div>
-          <div class="card-meta">DETECTION LAB</div>
-        </div>
-        <p>Installed Sysmon, generated CMD/PowerShell/file-creation activity, and mapped each action to
-        its corresponding Sysmon Event ID (1: Process Create, 3: Network Connection, 11: File Create).</p>
-        <div class="stack"><span class="chip">Sysmon</span><span class="chip">Event ID 1 / 3 / 11</span></div>
-        <div class="card-links"><a href="reports/lab3-sysmon.docx" target="_blank" rel="noopener">Download Report →</a></div>
-      </div>
-
-      <div class="card">
-        <div class="card-head">
-          <div class="card-title">MITRE ATT&amp;CK Exploration</div>
-          <div class="card-meta">FRAMEWORK LAB</div>
-        </div>
-        <p>Explored the ATT&amp;CK matrix across Initial Access, Execution, Persistence, and Credential
-        Access, then profiled threat group Mustard Tempest and built a full phishing attack chain
-        diagram mapped to specific technique IDs.</p>
-        <div class="stack"><span class="chip">attack.mitre.org</span><span class="chip">Attack Chain Diagram</span></div>
-        <div class="card-links"><a href="reports/lab1-mitre-attack-exploration.pdf" target="_blank" rel="noopener">Download Report (PDF) →</a></div>
-      </div>
-
-      <div class="card">
-        <div class="card-head">
-          <div class="card-title">SOC Simulation — Phishing → Ransomware Incident</div>
-          <div class="card-meta">INCIDENT SIMULATION</div>
-        </div>
-        <p>Worked a simulated incident at "Axeronix Corp" where a phishing email led to malware
-        execution, C2 beaconing, and file encryption — covering MITRE mapping, event classification,
-        severity, and escalation path.</p>
-        <div class="stack"><span class="chip">Phishing</span><span class="chip">C2 / Ransomware</span></div>
-        <div class="card-links"><a href="reports/lab3-soc-simulation.docx" target="_blank" rel="noopener">Download Report →</a></div>
-      </div>
-
-      <div class="card">
-        <div class="card-head">
-          <div class="card-title">Log Analysis — Login Scenarios</div>
-          <div class="card-meta">DETECTION LAB</div>
-        </div>
-        <p>Worked through successful and failed login scenarios against the Security log (Event ID 4624 /
-        4625), documenting what to search for, what to collect, and how to write the conclusion.</p>
-        <div class="stack"><span class="chip">Security Log</span><span class="chip">4624 / 4625</span></div>
-        <div class="card-links"><a href="reports/lab2-day2-log-analysis.docx" target="_blank" rel="noopener">Download Report →</a></div>
-      </div>
-
-      <div class="card">
-        <div class="card-head">
-          <div class="card-title">20 Attack Scenarios — Analyst Response</div>
-          <div class="card-meta">DETECTION LAB</div>
-        </div>
-        <p>Worked through 20 attack scenarios as an analyst exercise, practicing event classification and
-        response decisions across a range of attack types.</p>
-        <div class="card-links"><a href="reports/lab2-20-attack-scenarios.docx" target="_blank" rel="noopener">Download Report →</a></div>
-      </div>
-
-      <div class="card">
-        <div class="card-head">
-          <div class="card-title">TryHackMe — Introduction to Cyber Security Path</div>
-          <div class="card-meta">TRAINING RECORD</div>
-        </div>
-        <p>Completed the free rooms across Offensive Security Intro, Defensive Security Intro, Linux &amp;
-        Windows Fundamentals, SOC Fundamentals, and Introduction to SIEM as onboarding for the
-        internship.</p>
-        <div class="card-links"><a href="reports/lab4-tryhackme-path.pdf" target="_blank" rel="noopener">Download Report (PDF) →</a></div>
+        <div class="card-links"><a href="SOC_Internship_Lab_Reports_Combined.docx" target="_blank" rel="noopener">Download Combined Report →</a></div>
       </div>
     </section>
 
@@ -617,7 +533,7 @@
           <tr style="border-bottom:1px solid var(--line);"><td style="padding:7px 6px;">100013</td><td style="padding:7px 6px;">systeminfo.exe</td><td style="padding:7px 6px;">T1082</td><td style="padding:7px 6px;">8</td></tr>
           <tr><td style="padding:7px 6px;">100014</td><td style="padding:7px 6px;">ipconfig.exe</td><td style="padding:7px 6px;">T1016</td><td style="padding:7px 6px;">8</td></tr>
         </table>
-        <div class="card-links"><a href="reports/lab2-detection-challenge.docx" target="_blank" rel="noopener">View Full Rule Set →</a></div>
+        <div class="card-links"><a href="lab2-detection-challenge.docx" target="_blank" rel="noopener">View Full Rule Set →</a></div>
       </div>
 
       <div class="card">
@@ -634,7 +550,7 @@
         <span class="kw">&lt;description&gt;</span>Notepad execution detected<span class="kw">&lt;/description&gt;</span>
     <span class="kw">&lt;/rule&gt;</span>
 <span class="kw">&lt;/group&gt;</span></div>
-        <div class="card-links"><a href="reports/lab1-first-custom-rule.docx" target="_blank" rel="noopener">View Report →</a></div>
+        <div class="card-links"><a href="lab1-first-custom-rule.docx" target="_blank" rel="noopener">View Report →</a></div>
       </div>
     </section>
 
@@ -656,7 +572,7 @@
           <div class="cert-name">Networking Basics</div>
           <div class="cert-issuer">Cisco Networking Academy · Completed 19 Jun 2025</div>
         </div>
-        <a href="assets/cisco-networking-basics-certificate.pdf" target="_blank" rel="noopener" class="btn ghost">View credential</a>
+        <a href="Certificates/cisco-networking-basics-certificate.pdf" target="_blank" rel="noopener" class="btn ghost">View credential</a>
       </div>
       <div class="cert-row">
         <div>
@@ -670,7 +586,7 @@
           <div class="cert-name">Certified by micro1 — AI Interview</div>
           <div class="cert-issuer">micro1 · 9 Jul 2026</div>
         </div>
-        <a href="assets/micro1-certificate.png" target="_blank" rel="noopener" class="btn ghost">View credential</a>
+        <a href="Certificates/micro1-certificate.png" target="_blank" rel="noopener" class="btn ghost">View credential</a>
       </div>
     </section>
 
